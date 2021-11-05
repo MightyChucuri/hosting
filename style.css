@@ -1,0 +1,155 @@
+/* Estilos visuales no flex*/
+*{
+    font-family: sans-serif;    
+}
+
+.etiquetaCSS{
+    font-family: 'Consolas';
+    font-style: italic;    
+}
+
+.propiedadesContenedor {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 3px;
+}
+
+.base{
+    margin: 0 5px ;
+}
+
+.propiedad{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 3px;
+}
+
+
+.item{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1px;
+    padding: 35px;    
+}
+.item1{
+    background-color: #F9ED69;
+}
+.item2{
+    background-color: #F08A5D;
+}
+.item3{
+    background-color: #B83B5E ;
+}
+.item4{
+    background-color: #6A2C70 ;
+}
+
+
+/* aplicacion de flexbox*/
+.container{
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 3px;
+    
+    display: flex;       
+}
+
+/*flex-direction  para la direccion del eje principal*/
+.row{
+
+    flex-direction: row;
+}
+.rowReverse{
+
+    flex-direction: row-reverse;    
+}
+.column{
+
+    flex-direction: column;
+}
+.columnReverse{
+
+    flex-direction: column-reverse;    
+}
+
+
+/* flex-wrap para que los elementos puedan fluir a otra linea */
+.propWrap .item{
+    width: 50px;
+    text-align: center;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+.wrapReverse{
+    flex-wrap: wrap-reverse;
+}
+.noWrap{
+    flex-wrap: nowrap;
+}
+
+
+/* justify-content para distribuir los elementos a traves del eje principal */
+.propJustify .item{    
+    padding: 15px;    
+}
+
+.justStart{
+    justify-content: flex-start;
+}
+.justEnd{
+    justify-content: flex-end;
+}
+.justCenter{
+    justify-content: center;
+}
+.justBetween{
+    justify-content: space-between;
+}
+.justAround{
+    justify-content: space-around;
+}
+.justEvenly{
+    justify-content: space-evenly;    
+}
+
+
+/* para distribuir los elementos en el eje secundario, o cross axis, cuando hay espacio extra en el*/
+.propAlign .item{    
+    padding: 15px;  
+    width: 100px;
+    text-align: center;  
+}
+.propAlign .container{
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+.alignStart{
+    align-content: flex-start;
+}
+.alignEnd{
+    align-content: flex-end;
+}
+.alignCenter{
+    align-content: center;
+}
+.alignBetween{
+    align-content: space-between;
+}
+.alignAround{
+    align-content: space-around;
+}
+.alignEvenly{
+    align-content: space-evenly;    
+}
+.alignStretch{
+    align-content: stretch;    
+}
+
+
+
