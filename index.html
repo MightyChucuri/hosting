@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejemplos graficos FlexBox</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="base">
+            <div class="propiedadesContenedor">
+                <h1>Propiedades del contenedor</h1>
+                <div class="propiedad">
+                    <h2>flex-direction</h2>
+                    <div class="descripcion">
+                        <p>
+                            Especifica cómo se van a colocar los objetos
+                            flexibles en el contenedor flexible.
+                        </p>
+                    </div>
+                    <p class="etiquetaCSS">flex-direction:row;</p>
+                    <div class="container row">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">flex-direction:row-reverse;</p>
+                    <div class="container rowReverse">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">flex-direction:column;</p>
+                    <div class="container column">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">flex-direction:column-reverse;</p>
+                    <div class="container columnReverse">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                </div>
+
+                <div class="propiedad propWrap">
+                    <h2>flex-wrap</h2>
+                    <div class="descripcion">
+                        <p>
+                            Especifica si los objetos "hijos" son obligados a
+                            permanecer en una misma linea o pueden fluir en
+                            varias lineas.
+                        </p>
+                    </div>
+                    <p class="etiquetaCSS">flex-wrap:nowrap;</p>
+                    <div class="container noWrap">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">flex-wrap:wrap;</p>
+                    <div class="container wrap">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">flex-wrap:wrap-reverse;</p>
+                    <div class="container wrapReverse">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                </div>
+
+                <div class="propiedad propJustify">
+                    <h2>justify-content</h2>
+                    <div class="descripcion">
+                        <p>
+                            Establece como se distribuye el espacio entre el alrededor y los items flex, a lo largo del eje principal.
+                        </p>
+                    </div>
+                    <p class="etiquetaCSS">justify-content:flex-start;</p>
+                    <div class="container justStart">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">justify-content:flex-end;</p>
+                    <div class="container justEnd">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">justify-content:center;</p>
+                    <div class="container justCenter">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">justify-content:space-between;</p>
+                    <div class="container justBetween">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">justify-content:space-around;</p>
+                    <div class="container justAround">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">justify-content:space-evenly;</p>
+                    <div class="container justEvenly">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                </div>
+
+                <div class="propiedad propAlign">
+                    <h2>align-content</h2>
+                    <div class="descripcion">
+                        <p>
+                            Ajusta las lineas dentro de un contenedor flex
+                            cuando hay espacio extra en el eje transversal.
+                            <br><br>
+                            IMPORTANTE: la propiedad 'flex-wrap' debe estar en 'wrap'
+                        </p>
+                    </div>
+                    <p class="etiquetaCSS">align-content: flex-start;</p>
+                    <div class="container alignStart">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">align-content:flex-end;</p>
+                    <div class="container alignEnd">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">align-content:center;</p>
+                    <div class="container alignCenter">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">align-content:space-between;</p>
+                    <div class="container alignBetween">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">align-content:space-around;</p>
+                    <div class="container alignAround">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">align-content:space-evenly;</p>
+                    <div class="container alignEvenly">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                    <p class="etiquetaCSS">align-content:stretch;</p>
+                    <div class="container alignStretch">
+                        <div class="item item1">1</div>
+                        <div class="item item2">2</div>
+                        <div class="item item3">3</div>
+                        <div class="item item4">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="pie">
+            <div class="propiedad">
+                <p>
+                    Profundiza más sobre Flexbox en CSS3 revisando la documentación de Mozilla: <a target="_blank" href="https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox">Click aquí</a> 
+                </p>                
+                <br>
+                <span>Realizado por Miguel Monar</span> 
+            </div>
+        </footer>
+    </body>
+</html>
